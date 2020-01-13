@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "88376492-a3c5-4e85-b200-47b2a7785043",
+		"name": "ReallySimpleRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update Maturity",
+			"item": [
+				{
+					"name": "Fortune Maturity On",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://joeherbertdesign.com/ReallySimpleRest/Fortune?Field=IsMature&Value=TRUE&FortuneID=123",
+							"protocol": "https",
+							"host": [
+								"joeherbertdesign",
+								"com"
+							],
+							"path": [
+								"ReallySimpleRest",
+								"Fortune"
+							],
+							"query": [
+								{
+									"key": "Field",
+									"value": "IsMature"
+								},
+								{
+									"key": "Value",
+									"value": "TRUE"
+								},
+								{
+									"key": "FortuneID",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fortune Maturity Off",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://joeherbertdesign.com/ReallySimpleRest/Fortune?Field=IsMature&Value=FALSE&FortuneID=123",
+							"protocol": "https",
+							"host": [
+								"joeherbertdesign",
+								"com"
+							],
+							"path": [
+								"ReallySimpleRest",
+								"Fortune"
+							],
+							"query": [
+								{
+									"key": "Field",
+									"value": "IsMature"
+								},
+								{
+									"key": "Value",
+									"value": "FALSE"
+								},
+								{
+									"key": "FortuneID",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Fortune",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://joeherbertdesign.com/ReallySimpleRest/Fortune",
+							"protocol": "https",
+							"host": [
+								"joeherbertdesign",
+								"com"
+							],
+							"path": [
+								"ReallySimpleRest",
+								"Fortune"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Fortune",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://joeherbertdesign.com/ReallySimpleRest/Fortune",
+									"protocol": "https",
+									"host": [
+										"joeherbertdesign",
+										"com"
+									],
+									"path": [
+										"ReallySimpleRest",
+										"Fortune"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 13 Jan 2020 00:54:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Upgrade",
+									"value": "h2,h2c"
+								},
+								{
+									"key": "Connection",
+									"value": "Upgrade, Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\"FortuneID\":\"2998\",\"FortuneBody\":\" There was a young lady from Hyde Who ate a green apple and died.\\\\tWhile her lover lamented\\\\tThe apple fermented And made cider inside her inside. \",\"FortuneIsMature\":\"0\",\"ResDebug\":\"3555\",\"Err\":\"\"}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Vote",
+			"item": [
+				{
+					"name": "VoteUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://joeherbertdesign.com/ReallySimpleRest/CastVote?Vote=Up&FortuneID=100",
+							"protocol": "https",
+							"host": [
+								"joeherbertdesign",
+								"com"
+							],
+							"path": [
+								"ReallySimpleRest",
+								"CastVote"
+							],
+							"query": [
+								{
+									"key": "Vote",
+									"value": "Up"
+								},
+								{
+									"key": "FortuneID",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VoteDown",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://joeherbertdesign.com/ReallySimpleRest/CastVote?Vote=Down&FortuneID=100",
+							"protocol": "https",
+							"host": [
+								"joeherbertdesign",
+								"com"
+							],
+							"path": [
+								"ReallySimpleRest",
+								"CastVote"
+							],
+							"query": [
+								{
+									"key": "Vote",
+									"value": "Down"
+								},
+								{
+									"key": "FortuneID",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Get on base",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://joeherbertdesign.com/ReallySimpleRest/Test",
+					"protocol": "https",
+					"host": [
+						"joeherbertdesign",
+						"com"
+					],
+					"path": [
+						"ReallySimpleRest",
+						"Test"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get on base",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://joeherbertdesign.com/ReallySimpleRest/Test",
+							"protocol": "https",
+							"host": [
+								"joeherbertdesign",
+								"com"
+							],
+							"path": [
+								"ReallySimpleRest",
+								"Test"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 12 Jan 2020 23:59:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Upgrade",
+							"value": "h2,h2c"
+						},
+						{
+							"key": "Connection",
+							"value": "Upgrade, Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"Title\":\"Test Website\",\"Author\":\"Joe Herbert\",\"Description\":\"This tests my REST api\",\"Revision\":\"1\\/12\\/2020\"}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
